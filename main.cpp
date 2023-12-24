@@ -19,13 +19,6 @@ using gtiming::TimeSegment, gtiming::TimeFormat, gtiming::TimeStamp;
 int main() {
     Console console;
 
-    const TimeStamp<int> one {TimeFormat::TWENTY_FOUR_HOUR, TimeSegment::AM, 1, 0};
-    const TimeStamp<int> two {TimeFormat::TWELVE_HOUR, TimeSegment::AM, 1, 0};
-
-    console.println(one == two);
-
-    exit(1);
-
     const string testFilePath = "C:\\Users\\Micah\\CLionProjects\\WorkHourTracker\\test_file.txt";
 
     auto testStringResult = gio::readFile(testFilePath);
