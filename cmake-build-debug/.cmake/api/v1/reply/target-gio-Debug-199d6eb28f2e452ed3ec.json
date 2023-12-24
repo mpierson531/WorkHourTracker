@@ -1,0 +1,90 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "gio/libgio.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"gio/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "gutils::@f6b16a2abc869c06b71d"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "gcolors::@847805ff074972f7f321"
+		}
+	],
+	"id" : "gio::@5fa0b1c8971308d84078",
+	"name" : "gio",
+	"nameOnDisk" : "libgio.a",
+	"paths" : 
+	{
+		"build" : "gio",
+		"source" : "gio"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"path" : "gio/gio_utils",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "gio/Console.hpp",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

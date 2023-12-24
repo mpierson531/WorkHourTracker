@@ -1,0 +1,269 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						5,
+						6,
+						7,
+						8
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "gutils",
+					"jsonFile" : "directory-gutils-Debug-19b5e8e0b1f6ad4a87ec.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "gutils",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "gmath",
+					"childIndexes" : 
+					[
+						3
+					],
+					"jsonFile" : "directory-gmath-Debug-2687fe83c638c2329588.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "gmath",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "gmath/shapes",
+					"childIndexes" : 
+					[
+						4
+					],
+					"jsonFile" : "directory-gmath.shapes-Debug-e7e65269cf4f50afcce7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "gmath/shapes",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "gmath/shapes/collisions",
+					"jsonFile" : "directory-gmath.shapes.collisions-Debug-cc1c45d8ee6156176e69.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 0,
+					"source" : "gmath/shapes/collisions",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "gtiming",
+					"jsonFile" : "directory-gtiming-Debug-de2c88c7a80b43b50bfb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "gtiming",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "gcolors",
+					"jsonFile" : "directory-gcolors-Debug-01685bf99203c8c91e68.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "gcolors",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "gio",
+					"jsonFile" : "directory-gio-Debug-a9e759eac6135dc8183b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "gio",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "tracker",
+					"jsonFile" : "directory-tracker-Debug-622619acbe89c81b5bc9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "tracker",
+					"targetIndexes" : 
+					[
+						8
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					],
+					"name" : "WorkHourTracker",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "WorkHourTracker::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-WorkHourTracker-Debug-2d461f405115344d7ae5.json",
+					"name" : "WorkHourTracker",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "collisions::@408316f1e62a83120568",
+					"jsonFile" : "target-collisions-Debug-b707eb4cdbed6f82f66a.json",
+					"name" : "collisions",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "gcolors::@847805ff074972f7f321",
+					"jsonFile" : "target-gcolors-Debug-95af8d2a731c4cccbab3.json",
+					"name" : "gcolors",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "gio::@5fa0b1c8971308d84078",
+					"jsonFile" : "target-gio-Debug-199d6eb28f2e452ed3ec.json",
+					"name" : "gio",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "gmath::@3c8ce4b63bf75f92a33b",
+					"jsonFile" : "target-gmath-Debug-660e279f8b2f235284a5.json",
+					"name" : "gmath",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "gtiming::@f4c961bf44b85a1e738f",
+					"jsonFile" : "target-gtiming-Debug-ad343ca08cccee76c89a.json",
+					"name" : "gtiming",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "gutils::@f6b16a2abc869c06b71d",
+					"jsonFile" : "target-gutils-Debug-c5a18e9b7d9663a37fb7.json",
+					"name" : "gutils",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "shapes::@8cb1f0f2c4ed873fa994",
+					"jsonFile" : "target-shapes-Debug-2796ec3999d5f68c8e4b.json",
+					"name" : "shapes",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "tracker::@6a8d09bfa66bc2b9264b",
+					"jsonFile" : "target-tracker-Debug-0dc137bcc99a110b7c89.json",
+					"name" : "tracker",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Micah/CLionProjects/WorkHourTracker/cmake-build-debug",
+		"source" : "C:/Users/Micah/CLionProjects/WorkHourTracker"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

@@ -1,0 +1,90 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "gmath/libgmath.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries"
+		],
+		"files" : 
+		[
+			"gmath/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 9,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "shapes::@8cb1f0f2c4ed873fa994"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "collisions::@408316f1e62a83120568"
+		}
+	],
+	"id" : "gmath::@3c8ce4b63bf75f92a33b",
+	"name" : "gmath",
+	"nameOnDisk" : "libgmath.a",
+	"paths" : 
+	{
+		"build" : "gmath",
+		"source" : "gmath"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"path" : "gmath/math.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "gmath/Vector2.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "gmath/Vector3.hpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

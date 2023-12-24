@@ -1,0 +1,81 @@
+//
+// Created by Micah on 10/23/2023.
+//
+
+#ifndef GEO_CPP_GIO_UTILS_
+#define GEO_CPP_GIO_UTILS_
+
+#include <string>
+#include <fstream>
+#include <filesystem>
+#include <cstddef>
+
+using std::nullptr_t;
+
+#include "../gutils/gutils.hpp"
+using gutils::Result;
+
+namespace gio {
+    inline size_t fileSize(const std::string& path) {
+        return std::filesystem::file_size(path);
+    }
+
+    // TODO: CHECK MORE
+    inline void copy(const std::string& from, const std::string& to) {
+        std::cout << "Calling function that needs checking." << std::endl;
+
+        if (std::filesystem::is_directory(from)) {
+            std::filesystem::copy(from, to);
+            return;
+        }
+
+        std::filesystem::copy_file(from, to);
+    }
+
+    inline Result<string, nullptr_t> readFile(const std::string &path) {
+        try {
+            std::ifstream file(path, std::ios_base::binary | std::ios_base::in);
+
+            if (!file.is_open())
+                throw std::runtime_error("Failed to open " + path);
+
+            char c;
+            std::string s;
+
+            while (file.get(c)) {
+                s += c;
+            }
+
+            file.close();
+
+            return Result<string, nullptr_t>::okOf(s);
+        } catch (const std::exception& e) {
+            return Result<string, nullptr_t>::errOf(nullptr);
+        }
+    }
+
+    inline bool writeFile(const std::string &path, const std::string &content) {
+        try {
+            std::ofstream file(path);
+            file << content;
+            file.close();
+            return true;
+        } catch (const std::exception& e) {
+            return false;
+        }
+    }
+
+    inline bool deleteFile(const std::string& path) {
+        try {
+            std::remove(path.c_str());
+            return true;
+        } catch (const std::exception& e) {
+            return false;
+        }
+    }
+
+    inline bool makeDirectory(const std::string& path) {
+        return std::filesystem::create_directories(path);
+    }
+}
+#endif //GEO_CPP_GIO_UTILS_
